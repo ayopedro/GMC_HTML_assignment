@@ -1,160 +1,55 @@
-<!-- Document declaration -->
 <!DOCTYPE html>
-<!-- Root element -->
 <html lang="en">
-  <!-- Head element - contains information about our webiste -->
   <head>
-    <!-- Title - The name of our website -->
-    <title>My first website</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS</title>
   </head>
-  <!-- Body - Contains all the elements we want to show our users -->
   <body>
-    <!-- About me section -->
-    <section>
-        <!-- My Fullname -->
-      <h1>Ayotunde Pedro</h1>
-      <!-- Table -->
-      <table cellspacing="20">
-        <tr>
-          <td>
-            <!-- Image  -->
-            <img
-              src="https://avatars.githubusercontent.com/u/93743034?v=4"
-              alt="Ayotunde Pedro"
-              width="200"
-            />
-          </td>
-          <td>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              placeat, illum ipsum maiores quia praesentium totam alias
-              accusamus! Quia quisquam eum eos nesciunt beatae error commodi non
-              cumque voluptates quidem.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              placeat, illum ipsum maiores quia praesentium totam alias
-              accusamus! Quia quisquam eum eos nesciunt beatae error commodi non
-              cumque voluptates quidem.
-            </p>
-          </td>
-        </tr>
-      </table>
-    </section>
-    <section>
-        <h2>Education</h2>
-        <!-- Unordered list -->
-        <ul>
-            <li>Nigerian Navy secondary school, abeokuta</li>
-            <li>University of Lagos
-                <ol>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ol>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Hobbies</h2>
-        <ol>
-            <li>Coding</li>
-            <li>Reading books</li>
-            <li>Football fan
-                <ol type="i">
-                    <li>Chelsea</li>
-                    <li>Madrid</li>
-                </ol>
-            </li>
-            <li>Food</li>
-        </ol>
-    </section>
-    <section>
-        <h2>Skills</h2>
-        <p>I am a very skillful person. Some of my skills include:</p>
-        <table cellspacing="5" border="1">
-            <thead>
-                <th>Skill</th>
-                <th>Rating</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Javascript</td>
-                    <td>90%</td>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>100%</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>95%</td>
-                </tr>
-                <tr>
-                    <td>NodeJS</td>
-                    <td>80%</td>
-                </tr>
-                <tr>
-                    <td>DB Management</td>
-                    <td>90%</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
-        <h2>Simple form</h2>
-        <!-- HTML Forms -->
-        <form>
-            <div>
-                <label for="Name">Enter Fullname</label> <span>*</span>
-                <br>
-                <input type="text" placeholder="John Doe" required>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>GoMyCode</h1>
+      </div>
+      <ul class="navlinks">
+        <li class="navlink">Home</li>
+        <li class="navlink">About</li>
+        <li class="navlink">Blogs</li>
+        <li class="navlink">Contact</li>
+      </ul>
+    </nav>
+    <main>
+      <div class="content">
+        <h1>Who's watching ?</h1>
+        <div class="cards">
+          <div class="card">
+            <div class="profile-icon">
+                <img src="" alt="">
             </div>
-            <div>
-                <label for="Name">Enter Email</label>
-                <br>
-                <input type="email" placeholder="myemail@example.com" disabled>
+            <p class="profile-name"></p>
+          </div>
+          <div class="card">
+            <div class="profile-icon">
+                <img src="" alt="">
             </div>
-            <div>
-                <label for="Name">Enter Phone Number</label>
-                <br>
-                <input type="number" placeholder="08012345678">
+            <p class="profile-name"></p>
+          </div>
+          <div class="card">
+            <div class="profile-icon">
+                <img src="" alt="">
             </div>
-            <div>
-                <label for="Name">Enter Password</label>
-                <br>
-                <input type="password" placeholder="Enter a secure password" minlength="6">
+            <p class="profile-name"></p>
+          </div>
+          <div class="card">
+            <div class="profile-icon">
+                <img src="" alt="">
             </div>
-            <div>
-                <label for="Name">Enter Date of Birth</label>
-                <br>
-                <input type="date">
-            </div>
-            <div>
-                <label for="Name">Select a gender</label>
-                <br>
-                <!-- select element -->
-                <select>
-                    <!-- choose one -->
-                    <option value="#">Choose one</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="others">Prefer not to say</option>
-                </select>
-            </div>
-            <div>
-                <label for="Uploads">Upload a file</label>
-                <input type="file">
-                <input type="checkbox" name="" id="">
-                <input type="radio" name="" id="">
-                <input type="range">
-                <input type="color" name="" id="">
-            </div>
-            <div>
-                <button type="reset">Reset</button>
-                <input type="submit" value="Send request">
-            </div>
-        </form>
-    </section>
+            <p class="profile-name"></p>
+          </div>
+        </div>
+        <button class="btn">Select</button>
+      </div>
+    </main>
   </body>
 </html>
